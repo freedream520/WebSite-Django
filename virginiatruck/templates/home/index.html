@@ -1,0 +1,107 @@
+{% extends "base.html"%}
+{% load static %}
+	
+{% block content%}
+
+			<div class="row">
+				<div class="col-md-6">
+					<div id="emp"> 	
+						<h3>{{ company.name }}</h3>
+						<h5>{{ company.address }}</h5></b>
+						<br>
+						<p>{{ company.msg }}</p> 
+						<br>											
+						<a href="/contacts" class="green-btn">Contacts</a>
+						
+					</div>
+				</div>
+				<div class="col-md-6" >
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+						<!-- Carousel items -->
+						<div class="carousel-inner" id="slider">
+
+						    {% for item in slider%}
+						    	{% if forloop.first %}
+    								<div class="active item">
+										<img src="/{{ item.image }}" alt="{{ item.name }}">
+									</div>
+								{% else %}
+									<div class="item">
+										<img src="/{{ item.image }}" alt="{{ item.name }}">
+									</div>
+								{% endif %}
+						    {% endfor %}
+								
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="body">
+	<div class="container">
+		<div class="main">	
+			<div class="row">
+
+				<div class="col-md-4">
+					<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://virginiatruckbody.com/" data-text="Virginia Truck Body is a full service truck body and equipment distributor located in Northern Virginia." data-related="VirginiaTruckBo">Tweet</a>
+					<div class="fb-share-button" data-href="https://www.facebook.com/pages/Virginia-Truck-Body/690467127654475" data-type="button_count"></div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="col">
+					<link rel="stylesheet" type="text/css" href="">
+						<img src="{% static 'images/for-sale.jpg' %}" alt="" />
+						<div class="col-cnt">
+							<h5>FOR SALE</h5>
+							<p></p>
+							<a href="" class="more">more...</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="col">
+						<img src="{% static 'images/Gallery_icon.png' %}" alt="" />
+						<div class="col-cnt">
+							<h5>GALLERY</h5>
+							<p></p>
+							<a href="" class="more">more...</a>
+						</div>
+					</div>
+				</div>
+			</div> <!-- End class row -->
+
+			<div class="row" id="post">
+				<div class="col-md-4">
+				<h2>CUSTOMERS</h2>
+					<div id="myCarousel" class="carousel slide" data-ride="carousel">				
+							<!-- Carousel items -->
+							<div class="carousel-inner" id="slider2">
+
+						    {% for item in customer %}
+						    	{% if forloop.first %}
+    								<div class="active item">
+										<img src="/{{ item.image_url }}" alt="{{ item.name }}">
+									</div>
+								{% else %}
+									<div class="item">
+										<img src="/{{ item.image_url }}" alt="{{ item.name }}">
+									</div>
+								{% endif %}
+						    {% endfor %}
+
+							</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="fb-comments" data-href="https://www.facebook.com/pages/Virginia-Truck-Body/690467127654475" data-numposts="3" data-colorscheme="light"></div>
+				</div>
+			</div> <!-- End class row -->
+
+			<!-- End body-->
+{% endblock%}
+

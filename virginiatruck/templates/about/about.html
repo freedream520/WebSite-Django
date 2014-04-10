@@ -1,0 +1,25 @@
+{% extends "base.html"%}
+
+{% block content%}
+
+		</div>
+			</div>		
+		</div>
+		<div class="body">
+			<div class="container">
+				<div class="main">	
+				<div class="row" id="about">
+						<div class="col-md-10">
+						<img src="<?php echo Connection::ruta();?>
+							public/images/imgSlider/<?php echo $infot[0]['img'];?>" alt="" />
+							<div class="post-cnt">
+								<h2><?php echo utf8_encode($infot[0]['title']);?></h2>	
+								<p><?php echo utf8_encode($infot[0]['cont']);?></p>
+							</div>
+							<div class="cl">&nbsp;</div>
+						</div>
+					</div> <!-- End class row -->
+					
+					<!-- End body-->
+			
+{% endblock%}

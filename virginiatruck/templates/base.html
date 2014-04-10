@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>{{ company.name }}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+
+	<!-- Bootstrap -->
+	{% load static %}
+	<link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}">
+
+	<!-- Our Css -->
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+
+	<!-- Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Coda' rel='stylesheet' type='text/css' />
+	<link href='http://fonts.googleapis.com/css?family=Reenie+Beanie' rel='stylesheet' type='text/css'>
+
+
+</head>
+<body>
+	<div class="he">
+		<div class="container">	
+			<div class="header">
+				<div class="row">
+					<div class="col-md-4">
+						<h1 id="logo"><a href="/home">VTB</a></h1>
+					</div>
+					<div class="col-md-8">
+						<div class="collapse navbar-collapse">
+							<nav id="navigation" class="nav-header">
+								<ul>
+									<li class="active home"><a href="/home">Home</a></li>
+									<li><a href="/about">About</a></li>
+									<li><a href="/services">Services</a></li>
+									<li><a href="/products">Products</a></li>							
+									<li><a href="/jobs">Jobs</a></li>							
+									<li><a href="/contacts">Contacts</a></li>
+								</ul>
+							</nav>
+						</div>			
+					</div>
+				</div>
+				
+				{% block content%}{% endblock%}
+
+					<div class="row" id="post">
+					<div class="col-md-12">
+					<div id="partners-slider">
+						<div class="slider-holder2">
+						{% for it in slider_foo %}
+						    <img src="/{{ it.image_url }}" height="52"/>
+						{% endfor %}	    
+						</div>
+					</div>
+					<div class="slider-arr">
+						<a class="prev-arr arr-btn" href="#"></a>
+						<a class="next-arr arr-btn" href="#"></a>
+					</div>
+								<br>
+								<div class="socials">
+									<p>We are currently <strong>available</strong> for work. Please, contact us for a quote at <span><a href="mailto:{{ company.email }}">{{ company.email }}</a></span></p>
+
+									<ul>
+										<li><a href="https://www.facebook.com/pages/Virginia-Truck-Body/690467127654475" class="facebook-ico">facebook-ico</a></li>
+										<li><a href="https://twitter.com/VirginiaTruckBo" class="twitter-ico">twitter-ico</a></li>
+										<!--<li><a href="#" class="skype-ico">skype-ico</a></li>-->						
+									</ul>
+								</div>
+				</div>			
+			</div><!-- End class row -->
+
+		</div> <!-- End class main -->
+	</div> <!-- End class container -->
+</div> <!-- End class body -->
+
+<div class="fo">
+		<div class="container">
+			<div class="footer">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="collapse navbar-collapse">
+							<nav id="navigation" class="nav-footer">
+								<ul>
+									<li><a href="/home">Home</a></li>
+									<li><a href="/about">About</a></li>
+									<li><a href="/services">Services</a></li>
+									<li><a href="/products">Products</a></li>		
+									<li><a href="/jobs">Jobs</a></li>				
+									<li><a href="/contacts">Contacts</a></li>
+								</ul>
+							</nav>
+						</div>
+					<!--<p class="copy">Copyright &copy; 2012<span>|</span>Design by: <a href="http://chocotemplates.com" target="_blank">www.ChocoTemplates.com</a></p>
+					--><div class="cl">&nbsp;</div>
+					</div>
+					<div class="col-md-6">
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+	
+
+
+<!-- Jquery -->
+<script src="{% static 'js/jquery-1.11.0.js' %}" type="text/javascript"></script>
+
+<!-- Bootstrap -->
+<script src="{% static 'js/bootstrap.js' %}" type="text/javascript"></script>
+
+<!-- carouFredSel -->
+<script src="{% static 'js/jquery.carouFredSel.js' %}" type="text/javascript"></script>
+
+<!-- transition -->
+<script src="{% static 'js/jquery.transition.js' %}" type="text/javascript"></script>
+
+<!-- Our Js -->
+<script src="{% static 'js/scripts.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/functions.js' %}" type="text/javascript"></script>
+
+
+
+<script>
+	$(document).ready(function(){
+		$('.carousel').carousel();
+	});
+</script>
+
+<!-- Facebook Script-->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/es_ES/all.js#xfbml=1";
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Twitter Script-->
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');
+</script>
+
+</body>
+</html>

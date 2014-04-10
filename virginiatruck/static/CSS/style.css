@@ -1,0 +1,308 @@
+.he{
+ background-image: url(../images/header.png); 
+} 
+
+.header { 
+	padding: 15px 32px 0;  
+	background: url(../images/header-shell.png) 
+	no-repeat center 0; 
+	box-shadow: 0px -10px 9px 
+	rgba(0,0,0,0.7); 
+	-moz-box-shadow: 0px -10px 9px 
+	rgba(0,0,0,0.7); 
+	-webkit-box-shadow: 0px -10px 9px 
+	rgba(0,0,0,0.7); 
+	-o-box-shadow: 0px -3px 10px 9
+	rgba(0,0,0,0.7) 
+}
+
+#logo { 
+	width: 300px; 
+	font-size: 0; 
+	line-height: 0; 
+	float: left; 
+}
+
+#logo a { 
+	height: 75px; 
+	display: block;  
+	background: url(../images/logo.png) 
+	no-repeat 0 0; 
+	text-indent: -4000px; 
+}
+
+.nav-header { float: right; padding-top: 25px; }
+.nav-header ul { list-style: none; list-style-position: outside; font-size: 20px; font-family: 'Coda', cursive; font-weight: 400;  }
+.nav-header ul li { display: inline; padding-left: 34px; }
+.nav-header ul li a { color: #d5d4d4; }
+.nav-header ul li a:hover,
+.nav-header ul li.active a { color: #fff; text-decoration: none; }
+
+#emp {
+	position: relative;
+	top:50px;
+	left:25px;
+	height: 375px;
+}
+
+#emp h3 {
+	font-size: 30px;
+	letter-spacing: 3px;
+	font-weight: normal;
+	font-family: 'pt-sans', arial, helvetica, serif; 
+	color: #f5f5f5;
+	line-height: 30px; 
+	text-shadow: 0 0 2px rgba(0,0,0,0.5);
+	width: 420px;
+	left: 32px;
+	
+	top: 50px;
+	padding-bottom: 13px; 
+	margin: 0 0 18px;
+}
+
+#emp h5 { 
+	font-size: 15px; 
+	color: #f5f5f5; 
+	font-family: tahoma, arial, helvetica, serif; 
+	text-transform: uppercase; 
+	text-shadow: rgba(0,0,0,0.5) 0px 1px 1px; 
+	font-weight: normal; 
+	position: absolute; 
+	top: 70px; 
+	left:95px; 
+	white-space: nowrap; 
+}
+
+
+#emp p {
+	color: #959697;
+	font-size: 14px;
+	width: 420px;
+	left: 32px;
+	top: 181px;
+	margin: 0;
+	line-height: 26px; 
+}
+#emp a.green-btn {
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold; 
+	text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+	text-decoration: none;
+	text-align: center;
+	line-height: 52px;
+	outline: none;
+	display: block;
+	background-color: #888;
+	width: 194px;
+	height: 56px;
+	left: 32px;
+	top: 308px;
+	background: url(../images/green-btn.png) no-repeat 0 0;
+
+}
+#emp a:hover {
+	background-position: -1px -54px; 
+}
+
+#slider {
+	position: relative;
+	top:50px;
+	right: 25px;
+	border:10px solid #333;
+	border-radius: 40px;
+}
+
+#slider img{
+	width: 100%;
+	height: 100%;
+	max-height:250px;
+}
+
+.body{
+	font-size: 12px;
+	line-height: 22px;
+	font-family: arial, sans-serif;
+	color: #828282;
+	min-width: 100%;
+ background-image: url(images/body.png); 
+}
+
+
+.main { padding: 54px 0 20px 0; border-top: 1px solid #fff;  background: url(../images/main.png) repeat-x 0 0; box-shadow: 0px -4px 10px rgba(0,0,0,0.4); -moz-box-shadow: 0px -4px 10px rgba(0,0,0,0.4); -webkit-box-shadow: 0px -4px 10px rgba(0,0,0,0.4); -o-box-shadow: 0px -4px 10px rgba(0,0,0,0.4);  }
+.main h2 { font-size: 14px; color: #000; font-family: 'Jura', sans-serif; font-weight: 700; padding-bottom: 10px; text-transform: uppercase;  }
+.main p a { text-decoration: underline; }
+.main p a:hover { text-decoration: none; }
+.main section { background: url(../images/section.png) no-repeat center bottom; padding-bottom: 50px; margin-bottom: 20px;  }
+
+.main .col-md-4 { padding-left: 75px; padding-right: 32px;  }
+.main .col-md-4 h5 { padding-bottom: 4px; }
+.main .col-md-4 .col { float: center; }
+.main .col-md-4 .col + .col { padding-left: 40px; }
+.main .col-md-4 .col img { float: left; margin-right: 16px; width: 87px; }
+.main .col-md-4 .col .col-cnt { height: 100%; overflow: hidden; }
+
+.main #post { padding-left: 32px; padding-right: 32px; padding-top: 42px ; padding-bottom: 32px}
+.main .post img { float: left; margin-right: 18px; width: 100%; height: 65px; }
+.main #about img { float: left; margin-right: 18px; margin-left: 48px; width: 333px; height: 333px; }
+.main #jobs h5 {  
+	padding-bottom: 50px;  
+	padding-top: 25px;
+}
+
+#slider2 {
+	position: relative;
+	top:15px;
+	right: 25px;
+	border:10px ;
+	border-radius: 40px;
+	height:140px;
+	width: 250px;
+
+  -moz-box-shadow: 0px 0px 25px black;
+  -webkit-box-shadow: 0px 0px 25px black;
+  box-shadow: 0px 0px 25px black;
+}
+
+#slider2 img{
+	width: 100%;
+	height: 100%;
+
+}
+
+.fb-share-button{
+	top:-7px;
+}
+
+.main #partners-slider { height: 56px; }
+
+.main .partners { 
+	padding: 0 70px 30px 70px; 
+	height: 100%;  
+	position: relative; 
+	overflow: hidden; 
+	margin-top: -20px; 
+	z-index: 100; 
+}
+
+#partners-slider { overflow: hidden; position: relative; }
+#partners-slider img { margin: 0px 50px 0px 50px; float: left; height: 52px; }
+
+
+
+.slider-arr a.arr-btn { background: url(../images/slider-b-arr.png) no-repeat 0 0; width: 30px; height: 30px; display: block; position: absolute; top: 10px;}
+.slider-arr a.prev-arr { left: 32px; }
+.slider-arr a.prev-arr:hover { background-position: 0 -31px; }
+.slider-arr a.next-arr { right: 32px; background-position: right 0; }
+.slider-arr a.next-arr:hover { background-position: right -31px; }
+
+
+.socials { background: url(../images/socials-pattern.png) repeat 0 0; height: 50px; padding: 0 17px;  margin: 0 32px; border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px; -o-border-radius: 4px;  
+	box-shadow: 0px 0px 7px rgba(0,0,0,0.2) inset; -moz-box-shadow: 0px 0px 7px rgba(0,0,0,0.2) inset; -webkit-box-shadow: 0px 0px 7px rgba(0,0,0,0.2) inset; -o-box-shadow: 0px 0px 7px rgba(0,0,0,0.2) inset; }
+
+.socials p { float: left; line-height: 50px; font-size: 12px; }
+.socials p a { text-decoration: none; }
+.socials p a:hover { text-decoration: underline; }
+.socials ul { list-style: none; list-style-position: outside; float: right; padding-top: 11px;  }
+.socials ul li { float: left; padding-left: 5px;  }
+.socials ul li a { display: block; background: url(../images/socials.png) no-repeat 0 0; width: 28px; height: 28px; font-size: 0; line-height: 0; text-indent: -4000px; }
+
+.socials ul li a.facebook-ico { background-position: 0 0; }
+.socials ul li a.twitter-ico { background-position: -35px 0; }
+.socials ul li a.skype-ico { background-position: -68px 0; }
+.socials ul li a.rss-ico { background-position: -102px 0; }
+
+
+
+.fo { background: url(../images/footer.png) repeat 0 0;}
+
+.footer { background: url(../images/footer-shell.png) repeat 0 0; padding: 26px 0; }
+
+.nav-footer { float: left; padding-top: 7px; }
+.nav-footer ul { list-style: none; list-style-position: outside; font-size: 12px; font-family: 'Coda', cursive; font-weight: 400;  }
+.nav-footer ul li { display: inline; padding-left: 10px; }
+.nav-footer ul li a { color: #d5d4d4; }
+.nav-footer ul li a:hover,
+.nav-footer ul li.active a { color: #fff; text-decoration: none; }
+
+#serv h2,p{
+  font-size:100%;
+  font-weight:normal;
+}
+#serv ul,li{
+  list-style:none;
+}
+#serv ul{
+  overflow:hidden;
+  padding:3em;
+}
+#serv ul li{
+  text-decoration:none;
+  color:#000;
+  background:#ffc;
+  display:block;
+  height:85%;
+  width:90%;
+  padding:1em;
+  -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
+  -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+  -moz-transition:-moz-transform .15s linear;
+  -o-transition:-o-transform .15s linear;
+  -webkit-transition:-webkit-transform .15s linear;
+}
+#serv ul li{
+  margin:1em;
+  float:left;
+}
+#serv ul li {
+  font-size:140%;
+  font-weight:bold;
+  padding-bottom:10px;
+}
+#serv ul li p{
+  font-family:"Reenie Beanie",arial,sans-serif;
+  font-size:170%;
+}
+#serv ul li{
+  -webkit-transform: rotate(-6deg);
+  -o-transform: rotate(-6deg);
+  -moz-transform:rotate(-6deg);
+}
+#serv li:nth-child(even) {
+  -o-transform:rotate(4deg);
+  -webkit-transform:rotate(4deg);
+  -moz-transform:rotate(4deg);
+  position:relative;
+  top:5px;
+  background:#cfc;
+}
+#serv li:nth-child(3n) {
+  -o-transform:rotate(-3deg);
+  -webkit-transform:rotate(-3deg);
+  -moz-transform:rotate(-3deg);
+  position:relative;
+  top:-5px;
+  background:#ccf;
+}
+#serv  li:nth-child(5n){
+  -o-transform:rotate(5deg);
+  -webkit-transform:rotate(5deg);
+  -moz-transform:rotate(5deg);
+  position:relative;
+  top:-10px;
+}
+#serv li:hover,ul li:focus{
+  box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -moz-box-shadow:10px 10px 7px rgba(0,0,0,.7);
+  -webkit-box-shadow: 10px 10px 7px rgba(0,0,0,.7);
+  -webkit-transform: scale(1.12);
+  -moz-transform: scale(1.12);
+  -o-transform: scale(1.12);
+  position:relative;
+  z-index:5;
+}
+
+
+
