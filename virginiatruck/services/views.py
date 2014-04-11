@@ -1,6 +1,7 @@
-from django.shortcuts import render_to_response
-#from .models import about
+from django.shortcuts import render
+from .models import services
 
 def ShowServices(request):
-	return render_to_response('services/services.html')
+	servi = services.objects.all() 
+	return render(request,'services/services.html',{ 'servi':servi })
 
