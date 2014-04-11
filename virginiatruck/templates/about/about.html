@@ -10,11 +10,10 @@
 				<div class="main">	
 				<div class="row" id="about">
 						<div class="col-md-10">
-						<img src="<?php echo Connection::ruta();?>
-							public/images/imgSlider/<?php echo $infot[0]['img'];?>" alt="" />
+						<img src="/{{ abt.url_image }}" />
 							<div class="post-cnt">
-								<h2><?php echo utf8_encode($infot[0]['title']);?></h2>	
-								<p><?php echo utf8_encode($infot[0]['cont']);?></p>
+								<h2>{{ abt.title}}</h2>	
+								<p>{{ abt.content }}</p>
 							</div>
 							<div class="cl">&nbsp;</div>
 						</div>
