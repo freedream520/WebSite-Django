@@ -1,1 +1,91 @@
 {% extends "base.html"%}
+
+{% block content %}
+
+
+			</div>
+	</div>		
+</div>
+<div class="body">
+	<div class="container">
+		<div class="main">	
+		<div class="row" id="prod">
+				
+				<div class="col-md-4">
+				<div id="navcontainer">
+						<form name="form">
+							<div>
+
+							<!-- creo un select que mostrara las categorias de productos -->
+							<!-- creating a select to show product categories -->
+								Categories:
+								<select>
+									<option value="">Select a category:</option>
+										{% for item in catProd %}
+											<option value="{{ item.id }}"> {{ item.name }}</option>
+										{% endfor %}
+								</select>
+							</div>
+						<br>
+						</form>
+					</div>
+				
+				</div>
+				<div class="col-md-6">
+					<div id="products">
+								
+					</div>
+				</div>
+			</div> <!-- End class row -->
+			
+			<!-- End body-->	
+
+{% endblock %}
+
+
+{% block js %}
+
+<script>
+
+	/* llamando al metodo selectCategory  */
+	/* calling the method selectCategory */
+	
+	$('select').on('change',selectCategory);
+
+	function selectCategory(){
+		var id = $(this).val();
+
+		/* enviando datos por ajax */
+		/* sending data by ajax */
+		$.ajax({
+			data : {'id':id},
+			url: '/products/ajax_products/',
+			type: 'get',
+			success: function(data){
+
+				/* creando la variable html donde crearemos el contenido para el div products */
+				/* creating the html variable to create the content for the div products */
+				var html = "<div class='datagrid'>";
+					html += "<table class='table table-hover'>";
+					html += "<thead><tr><th>    PRODUCTS     </th></thead>";
+					html += "<tbody>";
+				for(var i = 0; i<data.length ; i++){
+					if ( i % 2 == 0){
+						html += "<tr><td>"+ data[i].fields.name +"</td></tr>";
+					}
+					else{
+						html += "<tr class='alt'><td>"+ data[i].fields.name +"</td></tr>";
+					}
+					
+				}
+				html += "</tbody>";
+				html += "</table></div>";
+				$('#products').html(html);
+
+			}
+
+		});
+	}
+
+</script>
+{% endblock %}

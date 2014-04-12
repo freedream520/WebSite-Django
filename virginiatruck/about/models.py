@@ -1,7 +1,7 @@
 from django.db import models
 
-# creando modelos de datos para la aplicacion home
-# Creating data models for the application home
+# creando modelos de datos para la aplicacion about
+# Creating data models for the application about
 
 class about(models.Model):
 	title = models.CharField(max_length=255)

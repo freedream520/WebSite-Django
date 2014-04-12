@@ -1,6 +1,7 @@
 from django.db import models
 
-# Create your models here.
+# creando modelos de datos para la aplicacion services
+# Creating data models for the application services
 
 class services(models.Model):
 	description = models.TextField()
