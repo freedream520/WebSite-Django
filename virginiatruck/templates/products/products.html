@@ -18,13 +18,17 @@
 
 							<!-- creo un select que mostrara las categorias de productos -->
 							<!-- creating a select to show product categories -->
-								Categories:
-								<select>
+
+								<div class="form-group">
+							    <label for="Email">Categories:</label>
+							    <select class="form-control">
 									<option value="">Select a category:</option>
 										{% for item in catProd %}
 											<option value="{{ item.id }}"> {{ item.name }}</option>
 										{% endfor %}
 								</select>
+							  </div>
+								
 							</div>
 						<br>
 						</form>

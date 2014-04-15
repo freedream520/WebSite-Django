@@ -1,1 +1,54 @@
 {% extends "base.html"%}
+
+{% block content %}
+	</div>
+	</div>		
+</div>
+<div class="body">
+	<div class="container">
+		<div class="main">	
+		<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-5">
+					<form role="form" action="" method="post">{% csrf_token %}
+
+					  <div class="form-group">
+					    <label for="name">Name</label>
+					    {{formc.name}}
+					  </div>
+
+					  <div class="form-group">
+					    <label for="Email">Email address</label>
+					    {{formc.email}}
+					  </div>
+
+					  <div class="form-group">
+					    <label for="number">Phone number</label>
+					    {{formc.phonenumber}}
+					  </div>
+
+					  <div class="form-group">
+					    <label for="company">Your company</label>
+					    {{formc.company}}
+					  </div>
+
+					  <div class="form-group">
+					  <label for="qs">As you hear about our company?</label>
+					    {{formc.hyn}}
+					  </div>
+
+					  <div class="form-group">
+					    <label for="corq">Comments or Questions</label>
+					    {{formc.comments}}
+					  </div>
+					  
+					  <button type="submit" class="btn btn-default">Submit</button>
+					</form>
+				</div>
+				<div class="col-md-6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3111.9768154109247!2d-77.17814084999999!3d38.741294249999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7ad26ba5712b5%3A0xf4cc0960420b8bc1!2sVirginia+Truck+Body+%26+Equipment!5e0!3m2!1ses!2sus!4v1394087004658" width="90%" height="350" frameborder="0" style="border:0"></iframe>
+				</div>
+			</div> <!-- End class row -->
+			
+			<!-- End body-->		
+{% endblock %}

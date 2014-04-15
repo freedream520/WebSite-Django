@@ -1,6 +1,9 @@
-from django.shortcuts import render_to_response
-#from .models import about
+from django.shortcuts import render
+from .models import jobs
 
+# funcion que retorna la lista de los empleos
+# Function that returns the list of jobs
 def ShowJobs(request):
-	return render_to_response('Jobs/Jobs.html')
+	list_jobs = jobs.objects.all()
+	return render(request,'Jobs/Jobs.html',{'list_jobs' : list_jobs})
 

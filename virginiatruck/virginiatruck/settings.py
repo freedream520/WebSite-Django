@@ -101,3 +101,15 @@ from django.conf.global_settings import TEMPLATE_CONTEXT_PROCESSORS as TCP
 TEMPLATE_CONTEXT_PROCESSORS = TCP + (
     'home.context_processors.my_processor',
 )
+
+
+# config email
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = '587'
+EMAIL_HOST_USER = 'dennyssolis@gmail.com'
+EMAIL_HOST_PASSWORD = 'Libertad20011'
+EMAIL_USE_TLS = True
+
+
+

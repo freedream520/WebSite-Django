@@ -1,1 +1,43 @@
 {% extends "base.html"%}
+
+{% block content%}
+
+			</div>
+	</div>		
+</div>
+<div class="body">
+	<div class="container">
+		<div class="main">	
+		<div class="row" id="jobs">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="panel-group" id="accordion">
+						{% for item in list_jobs %}
+						    <div class="panel panel-default">
+							    <div class="panel-heading">
+							      <h4 class="panel-title">
+							        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+										{{ item.title }}
+									</a>
+					      		  </h4>
+					    		</div>
+					    	<div id="collapseOne" class="panel-collapse collapse">
+					      		<div class="panel-body">
+					      			<p>{{ item.content }}</p>
+									<br>
+									<h6>
+										<p>Compensation: {{ item.compensation }}</p>
+									</h6>
+								</div>
+					   	    </div>	
+						{% endfor %}  
+					 </div>
+				</div>
+
+				<h5>Email To: <a href="mailto:info@equipmentworksinc.com">info@virginiatruckbody.com</a></h5>
+
+			</div> <!-- End class row -->
+			
+			<!-- End body-->	
+
+{% endblock %}
